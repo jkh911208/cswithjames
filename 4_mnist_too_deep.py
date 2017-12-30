@@ -27,13 +27,17 @@ x_test = x_test.reshape(x_test.shape[0], img_height*img_width*channel)
 #print(x_train.shape)
 #exit(0)
 
+#Define Model
 model = Sequential()
 model.add(Dense(32, activation='softmax', input_shape=(784,)))
 model.add(Dense(32, activation='softmax'))
 model.add(Dense(32, activation='softmax'))
 model.add(Dense(32, activation='softmax'))
 model.add(Dense(32, activation='softmax'))
+model.add(Dense(32, activation='softmax'))
+model.add(Dense(32, activation='softmax'))
 model.add(Dense(num_classes, activation='softmax'))
+# 8 Layers
 
 model.summary()
 
