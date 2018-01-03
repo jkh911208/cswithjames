@@ -33,7 +33,7 @@ model.add(Dense(32, activation='relu'))
 model.add(Dense(32, activation='relu'))
 model.add(Dense(32, activation='relu'))
 model.add(Dense(num_classes, activation='softmax'))
-# 10 Layers
+# 10 Layers with ReLU Activation function
 
 # print the model summary
 model.summary()
