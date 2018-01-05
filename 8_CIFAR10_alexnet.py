@@ -8,7 +8,7 @@ from keras.optimizers import Adam
 # Hyperparameters
 batch_size = 128
 num_classes = 10
-epochs = 50
+epochs = 1000
 
 # Load CIFAR10 Data
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
