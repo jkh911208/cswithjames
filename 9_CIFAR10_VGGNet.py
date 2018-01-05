@@ -5,6 +5,17 @@ from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 from keras.optimizers import Adam
 
+# backend
+import tensorflow as tf
+from keras import backend as k
+
+# Don't pre-allocate memory; allocate as-needed
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+
+# Create a session with the above options specified.
+k.tensorflow_backend.set_session(tf.Session(config=config))
+
 # Hyperparameters
 batch_size = 128
 num_classes = 10
